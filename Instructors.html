@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructors page</title>
+  <link rel="stylesheet" href="Instructors.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+</head>
+
+<body>
+  <!-- Header with logo and navigation -->
+  <header class="header">
+    <a href="index.html">
+      <img src="img/logo.jpg" class="logo" alt=""> </a>
+    <nav class="nav">
+      <button class="close-btn" onclick="toggleMenu()">×</button>
+      <a href="index.html" class="active">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="Instructors.html">Instructors</a>
+      <a href="Membership.html">Membership</a>
+      <a href="Facilities.html">Facilities</a>
+      <a href="Contact.html">Contact us</a>
+      <a href="About.html">About us</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <div class="slider-container">
+    
+    <h1>
+      Instructors Details
+    </h1><br>
+    <div class="slider">
+        <div class="slide"><img src="img/img8.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="img/img11.png" alt="Slide 2"></div>
+        <div class="slide"><img src="img/img6.png" alt="Slide 3"></div>
+        <div class="slide"><img src="img/img10.png" alt="Slide 4"></div>
+        <div class="slide"><img src="img/img9.png" alt="Slide 5"></div>
+        <div class="slide"><img src="img/img7.png" alt="Slide 6"></div>
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+</div>
+
+   <!-- Contact section -->
+   <section class="contact-section">
+    <div class="contact-info">
+      <h1>More info?</h1>
+      <br><br>
+      <p>If you have any questions about the original Dubo®, check out the FAQs on our site or contact us. We’ll be
+        happy to hear from you!</p>
+      <br>
+      <a href="contact.html">
+        <button>Get in touch!</button>
+      </a>
+    </div>
+    <img src="img/img13.jpg" class="welcome-image" alt="">
+  </section>
+
+
+  <!-- Footer with social media links -->
+  <footer class="footer">
+    <a href="FAQ.html">FAQ</a>
+    <div class="social-links">
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+      <p>&copy; 2024 Budo Martial Arts.</p>
+    </div>
+  </footer>
+</body>
+
+<script>
+  const navLinks = document.querySelectorAll('.nav a');
+  const currentUrl = window.location.pathname;
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentUrl.split('/').pop()) {
+      link.classList.add('active');
+    }
+  });
+
+  function toggleMenu() {
+    document.querySelector(".nav").classList.toggle("active");
+  }
+  
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    if (index >= totalSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else {
+        currentIndex = index;
+    }
+
+    const offset = -currentIndex * 100; // Adjusts the slider position
+    document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+}
+
+function changeSlide(step) {
+    showSlide(currentIndex + step);
+}
+
+function autoSlide() {
+    setInterval(() => {
+        changeSlide(1);
+    }, 3000); // 3000ms = 3 seconds
+}
+
+window.onload = autoSlide;
+
+</script>
+</html>

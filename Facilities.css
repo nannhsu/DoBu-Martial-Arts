@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bitter", serif;
+}
+
+.header {
+    background: hsl(0, 0%, 100%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+}
+
+.navbar {
+    background-color: white; 
+}
+
+.navbar-toggler-icon {
+    background-color: #fffcfc;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Bitter", serif;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #130a0a;
+    padding: 5px 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #457697;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #457697;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.img-fluid {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.contact-info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    align-items: center; 
+    padding: 20px;
+}
+
+/* Contact info card styles */
+.contact-info-card {
+    text-align: center;
+    max-width: 90%; 
+}
+
+.contact-info-card h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-info-card p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #457697;
+    color: rgb(228, 212, 212);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #75bde0; 
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%; 
+   border-radius: 10%;
+}
+.text p {
+    text-align: center;
+    font-family: "Bitter", serif;
+    color: #457697;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info-section {
+        grid-template-columns: 1fr; 
+        gap: 10px; 
+    }
+
+    .contact-info-card h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-info-card p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 12px 24px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-info-section {
+        padding: 15px;
+    }
+
+    .contact-info-card {
+        padding: 15px;
+        max-width: 100%; 
+    }
+
+    .contact-info-card h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-info-card p {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 1em; 
+        padding: 10px 20px;
+    }
+}
+
+
+.footer {
+    font-family: "Bitter", serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin-top: 5%;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #457697;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.social-links a {
+    margin-left: 10px;
+}
+
+.social-links i {
+    font-size: 30px;
+    margin-right: 10px;
+}

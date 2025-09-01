@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bitter", serif;
+}
+
+/* Header styling */
+.header {
+    background: hsl(0, 0%, 100%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #ffffff;
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+}
+
+nav a {
+    color: #fff;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Bitter", serif;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #130a0a;
+    padding: 5px 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #457697;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #457697;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.contact-info h1 {
+    color: #457697;
+}
+
+
+
+h1,
+h2,
+h3 {
+    font-family: "Bitter", serif;
+    color: #457697;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 5%;
+}
+
+.navbar-toggler-icon {
+    background-color: #fffcfc;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        color: #130a0a;
+        padding: 5px 10px;
+    }
+}
+
+.btn-dark {
+    background-color: #457697;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #365a6d;
+    transform: scale(1.05);
+}
+
+.btn-dark:active {
+    background-color: #2d4c5c;
+    transform: scale(1);
+}
+
+
+.col-md-6 .p-3 {
+    box-shadow: 0 6px 12px #457697;
+}
+
+.col-md-6 .p-3 {
+    box-shadow: 0 6px 12px #457697;
+}
+
+.text-center .p-4 {
+    box-shadow: 0 4px 10px #457697;
+}
+
+
+.custom-btn {
+    background-color: #457697;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #365a6d;
+    transform: scale(1.05);
+}
+
+.custom-btn:active {
+    background-color: #2d4c5c;
+    transform: scale(1);
+}
+
+
+.footer {
+    font-family: "Bitter", serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin-top: 5%;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #457697;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.social-links a {
+    margin-left: 10px;
+}
+
+.social-links i {
+    font-size: 30px;
+    margin-right: 10px;
+}

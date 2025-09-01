@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header with logo and navigation -->
+  <header class="header">
+    <a href="index.html">
+      <img src="img/logo.jpg" class="logo" alt=""> </a>
+    <nav class="nav">
+      <button class="close-btn" onclick="toggleMenu()">×</button>
+      <a href="index.html" class="active">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="Instructors.html">Instructors</a>
+      <a href="Membership.html">Membership</a>
+      <a href="Facilities.html">Facilities</a>
+      <a href="Contact.html">Contact us</a>
+      <a href="About.html">About us</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+  </header>
+
+  <!-- Main content section -->
+  <main>
+    <!-- Welcome section -->
+    <section class="welcome-section">
+      <div class="welcome-text">
+        <h1>Welcome from <br>DOBU Martial Arts</h1>
+      </div>
+      <img src="img/img1.jpg" class="welcome-image"alt="">
+    </section>
+
+    <!-- About section -->
+    <section class="about-section">
+        <h1> DUBO Martial Arts</h1>
+      <p>At DUBO Martial Arts, we are dedicated to teaching the art of self-discipline, respect, and physical fitness. Our classes are designed for all skill levels, from beginners to advanced practitioners, and focus on building strength, flexibility, and confidence through traditional martial arts techniques.
+            <br><br>
+        Whether you're looking to improve your fitness, learn self-defense, or find a supportive community, our experienced instructors are here to guide you every step of the way. Join us and start your journey toward mastering martial arts in a positive and encouraging environment.</p>
+    </section>
+
+
+    <!-- Feature section with two columns -->
+    <section class="features-section">
+      <img src="img/img2.jfif" class="feature feature-large" alt=""  >
+
+      <div class="feature-img">
+        <div class="feature feature-small">
+            <img src="img/img3.jfif" alt="">
+            <p>DUBO Martial Arts is a comprehensive system that emphasizes self-defense, personal growth, and physical conditioning. Our curriculum integrates various martial arts disciplines, including striking, grappling, and traditional forms, offering a holistic approach to training.</p>
+        </div>
+        <div class="feature feature-small">
+            <img src="img/img5.jpg" alt="">
+            <p>Our seasoned instructors bring years of experience and expertise, guiding students through every aspect of their martial arts journey. Each class is designed to challenge and inspire, ensuring that students of all skill levels can grow at their own pace.</p>
+        </div>
+    </div>
+
+
+    
+    </section>
+
+    <!-- Contact section -->
+
+
+    <section class="contact-section">
+      <div class="contact-info">
+        <h1>More info?</h1>
+        <br><br>
+        <p>If you have any questions about the original Dubo®, check out the FAQs on our site or contact us. We’ll be
+          happy to hear from you!</p>
+        <br>
+        <a href="contact.html">
+          <button>Get in touch!</button>
+        </a>
+      </div>
+      <img src="img/img4.jpg" class="welcome-image" alt="">
+    </section>
+
+  </main>
+
+  <!-- Footer with social media links -->
+  <footer class="footer">
+    <a href="FAQ.html">FAQ</a>
+    <div class="social-links">
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+        <p>&copy; 2024 Budo Martial Arts.</p>
+    </div>
+</footer>
+</body>
+<script>
+function toggleMenu() {
+  document.querySelector(".nav").classList.toggle("active");
+}
+</script>
+</html>

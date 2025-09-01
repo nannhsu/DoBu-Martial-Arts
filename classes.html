@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes page</title>
+  <link rel="stylesheet" href="classes.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+</head>
+
+<body>
+  <!-- Header with logo and navigation -->
+  <header class="header">
+    <a href="index.html">
+      <img src="img/logo.jpg" class="logo" alt=""> </a>
+    <nav class="nav">
+      <button class="close-btn" onclick="toggleMenu()">×</button>
+      <a href="index.html" class="active">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="Instructors.html">Instructors</a>
+      <a href="Membership.html">Membership</a>
+      <a href="Facilities.html">Facilities</a>
+      <a href="Contact.html">Contact us</a>
+      <a href="About.html">About us</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+
+  <div class="class">
+    <h1>Martial Arts Class Timetable</h1>
+  </div>
+
+    <div class="responsive-table">
+      <table>
+        <tr>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+        <tr>
+          <td data-label="Time">06:00-07:30</td>
+          <td data-label="Monday">Jiu-jitsu</td>
+          <td data-label="Tuesday">Karate</td>
+          <td data-label="Wednesday">Judo</td>
+          <td data-label="Thursday">Jiu-jitsu</td>
+          <td data-label="Friday">Muay Thai</td>
+          <td data-label="Saturday"></td>
+          <td data-label="Sunday"></td>
+        </tr>
+        <tr>
+          <td data-label="Time">08:00-10:00</td>
+          <td data-label="Monday">Muay Thai</td>
+          <td data-label="Tuesday">Private tuition</td>
+          <td data-label="Wednesday">Private tuition</td>
+          <td data-label="Thursday">Private tuition</td>
+          <td data-label="Friday">Jiu-jitsu</td>
+          <td data-label="Saturday">Private tuition</td>
+          <td data-label="Sunday">Private tuition</td>
+        </tr>
+        <tr>
+          <td data-label="Time">10:30-12:00</td>
+          <td data-label="Monday">Private tuition</td>
+          <td data-label="Tuesday">Private tuition</td>
+          <td data-label="Wednesday">Private tuition</td>
+          <td data-label="Thursday">Private tuition</td>
+          <td data-label="Friday">Private tuitionu</td>
+          <td data-label="Saturday">Judo</td>
+          <td data-label="Sunday">Karate</td>
+        </tr>
+        <tr>
+          <td data-label="Time">13:00-14:30</td>
+          <td data-label="Monday">Open mat/personal practice</td>
+          <td data-label="Tuesday">Open mat/personal practice</td>
+          <td data-label="Wednesday">Open mat/personal practice</td>
+          <td data-label="Thursday">Open mat/personal practice</td>
+          <td data-label="Friday">Open mat/personal practice</td>
+          <td data-label="Saturday">Karate</td>
+          <td data-label="Sunday">Judo</td>
+        </tr>
+        <tr>
+          <td data-label="Time">15:00-17:00</td>
+          <td data-label="Monday">Kids Jiu-jitsu</td>
+          <td data-label="Tuesday">Kids Judo</td>
+          <td data-label="Wednesday">Kids Karate</td>
+          <td data-label="Thursday">Kids Jiu-jitsu</td>
+          <td data-label="Friday">Kids Judo</td>
+          <td data-label="Saturday">Muay Thai</td>
+          <td data-label="Sunday">Jiu-jitsu</td>
+        </tr>
+        <tr>
+          <td data-label="Time">17:30-19:00</td>
+          <td data-label="Monday">Karate</td>
+          <td data-label="Tuesday">Muay Thai</td>
+          <td data-label="Wednesday">Judo</td>
+          <td data-label="Thursday">Jiu-jitsu</td>
+          <td data-label="Friday">Muay Thai</td>
+          <td data-label="Saturday"></td>
+          <td data-label="Sunday"></td>
+        </tr>
+        <tr>
+          <td data-label="Time">19:00-21:00</td>
+          <td data-label="Monday">Jiu-jitsu</td>
+          <td data-label="Tuesday">Judo</td>
+          <td data-label="Wednesday">Jiu-jitsu</td>
+          <td data-label="Thursday">Judo Karate</td>
+          <td data-label="Friday">Private tuition</td>
+          <td data-label="Saturday"></td>
+          <td data-label="Sunday"></td>
+        </tr>
+        
+      </table>
+    </div>
+    
+
+
+  <title>Nine Boxes</title>
+<div class="grid-container">
+  <div class="box"><h2>Jiu-jitsu</h2><br>Jiu Jitsu is a predominantly ground-based martial art, using the principals of leverage, angles, pressure and timing, as well as knowledge of the human anatomy, in order to achieve a non-violent submission of one's opponent.</div>
+  <div class="box"><h2>Karate</h2><br>Studies have shown that training in karate means you are less likely to be attacked. This includes both attacks in public and even schoolyard bullying. </div>
+  <div class="box"><h2>Judo</h2><br>Judo focuses mainly on takedowns and throws from a standing position. Although one aspect of judo is focused on ground techniques, termed na waza in Japanese, jiu jitsu's main focus is to utilize takedowns to control an opponent on the ground.</div>
+  <div class="box"><h2>Muay Thai</h2><br>“Muay” translates to mean “boxing” in Thai, so Muay Thai is literally Thai boxing. Taking elements from Muay Boran, the traditional Thai martial arts, Muay Thai as a modern combat sport was first formalized in the early 20th century.</div>
+  <div class="box"><h2>	Kids Judo</h2><br>Judo is a sport suitable for everyone, regardless of physical and mental abilities. It allows a harmonious development of body and mind gradually.</div>
+  <div class="box"><h2>Kids Jiu-jitsu</h2><br>Training Jiu Jitsu 2-3 times per week offers numerous benefits, particularly in enhancing self-control and reducing outbursts. 👊 **Discipline & Focus:** Consistent training helps children learn discipline, focus, and respect for others.</div>
+  <div class="box"><h2>Kids Karate</h2><br>Karate helps kids learn how to manage conflict resolution and confront challenging situations. The self-defence technique taught in martial arts requires focus and concentration, which helps children develop discipline and self-control.</div>
+  <div class="box"><h2>Private tuition</h2><br>Private karate lessons can help you improve your skills and understanding of karate in a number of ways, like Personalized instruction,Faster learning,Improved understanding,etc...</div>
+  <div class="box"><h2>Open mat/personal practice</h2><br>Unlike structured classes with a fixed curriculum, Open Mat is that refreshing pause, an open canvas where you paint your own Jiu-Jitsu journey. But as liberating as it may seem, it comes with its own set of rules to ensure safety, respect, and growth for every participant.</div>
+</div>
+ 
+<section class="contact-section">
+  <div class="contact-info">
+    <h1>More info?</h1>
+    <br><br>
+    <p>If you have any questions about the original Dubo®, check out the FAQs on our site or contact us. We’ll be
+      happy to hear from you!</p>
+    <br>
+    <a href="contact.html">
+      <button>Get in touch!</button>
+    </a>
+  </div>
+  <img src="img/img12.webp" class="welcome-image" alt="">
+</section>
+
+
+  <!-- Footer with social media links -->
+  <footer class="footer">
+    <a href="FAQ.html">FAQ</a>
+    <div class="social-links">
+     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+      <p>&copy; 2024 Budo Martial Arts.</p>
+    </div>
+  </footer>
+</body>
+
+<script>
+  const navLinks = document.querySelectorAll('.nav a');
+  const currentUrl = window.location.pathname;
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentUrl.split('/').pop()) {
+      link.classList.add('active');
+    }
+  });
+
+  function toggleMenu() {
+    document.querySelector(".nav").classList.toggle("active");
+  }
+</script>
+<script>
+  $(document).ready(function() {
+    const currentUrl = window.location.pathname;
+
+    // Highlight the active nav link
+    $('.nav a').each(function() {
+      if ($(this).attr('href') === currentUrl.split('/').pop()) {
+        $(this).addClass('active');
+      }
+    });
+
+    // Toggle the navigation menu on hamburger click
+    $('.hamburger').click(function() {
+      $('.nav').toggleClass('active');
+    });
+  });
+</script>
+</html>

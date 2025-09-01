@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us page</title>
+  <link rel="stylesheet" href="About.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header with logo and navigation -->
+  <header class="header">
+    <a href="index.html">
+    <img src="img/logo.jpg" class="logo" alt=""> </a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="nav">
+      <button class="close-btn" onclick="toggleMenu()">×</button>
+      <a href="index.html" class="active">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="Instructors.html">Instructors</a>
+      <a href="Membership.html">Membership</a>
+      <a href="Facilities.html">Facilities</a>
+      <a href="Contact.html">Contact us</a>
+      <a href="About.html">About us</a>
+    </nav>
+</header>
+
+<div class="container about-section">
+  <div class="text">
+    <h1>About DUBO</h1>
+    <p>DoBu Martial Arts is a fictional martial arts gym that offers various classes in martial arts, fitness training, and self-defense. Since you’re working on developing a website for DoBu Martial Arts as part of your role at WebSpace, here’s a detailed concept of what DoBu could represent, including its mission, values, classes, and facilities.</p>
+  </div>
+  <div class="image">
+    <img src="img/img34.webp" alt="Image of DoBu Martial Arts">
+  </div>
+</div>
+
+<div class="container about-section">
+  <div class="image-grid">
+    <img src="img/img40.jpg" alt="Image 1">
+    <img src="img/img41.webp" alt="Image 2">
+    <img src="img/img42.jpg" alt="Image 3">
+    <img src="img/img14.webp" alt="Image 4">
+  </div>
+  <div class="text-content">
+    <h1>Karate</h1>
+    <p>Karate is a Japanese martial art that involves unarmed combat techniques such as striking, kicking, and blocking.  <br>
+      It originated in Okinawa, an island off Japan, and is known for its emphasis on self-defense, balance, and self-discipline. <br> 
+      The word "karate" is a combination of the Chinese characters kara, meaning "empty", and te, meaning "hand".</p>
+  </div>
+</div>
+
+<div class="container about-section">
+  <div class="text">
+    <h1>Muay Thai</h1>
+    <p>Muay Thai, also known as Thai boxing, is a full-contact combat sport and martial art that originated in Thailand. <br>
+      It's characterized by the use of eight points of contact, or limbs, to strike an opponent, including punches, elbows, knees, and shins.</p>
+  </div>
+  <div class="image">
+    <img src="img/img35.jpg" alt="Image of DoBu Martial Arts">
+  </div>
+</div>
+
+<div class="container about-section">
+  <div class="image">
+    <img src="img/img36.jpg" alt="Image of DoBu Martial Arts">
+  </div>
+  <div class="text">
+    <h1>Jiu-jitsu</h1>
+    <p>Jiu-jitsu is a martial art and combat sport that focuses on grappling and ground fighting.<br>
+      The term "jiu-jitsu" comes from Japanese and means "gentle art". <br>
+      Jiu-jitsu uses leverage, angles, pressure, and timing to control and submit an opponent. The goal is to gain the upper hand without striking your opponent. </p>
+  </div>
+</div>
+
+
+   <!-- Contact section -->
+   <section class="contact-section">
+    <div class="contact-info">
+      <h1>More info?</h1>
+      <br><br>
+      <p>If you have any questions about the original Dubo®, check out the FAQs on our site or contact us. We’ll be
+        happy to hear from you!</p>
+      <br>
+      <a href="contact.html">
+        <button>Get in touch!</button>
+      </a>
+    </div>
+    <img src="img/img17.jpg" class="welcome-image" alt="">
+  </section>
+
+
+  <!-- Footer with social media links -->
+  <footer class="footer">
+    <a href="FAQ.html">FAQ</a>
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+      <p>&copy; 2024 Budo Martial Arts.</p> 
+    </div>
+  </footer>
+</body>
+
+<script>
+  const navLinks = document.querySelectorAll('.nav a');
+  const currentUrl = window.location.pathname;
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentUrl.split('/').pop()) {
+      link.classList.add('active');
+    }
+  });
+
+  function toggleMenu() {
+    document.querySelector(".nav").classList.toggle("active");
+  }
+</script>
+</html>

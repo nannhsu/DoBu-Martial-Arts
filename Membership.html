@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership page</title>
+  <link rel="stylesheet" href="Membership.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+</head>
+
+<body>
+  <!-- Header with logo and navigation -->
+  <header class="header">
+    <a href="index.html">
+      <img src="img/logo.jpg" class="logo" alt=""> </a>
+    <nav class="nav">
+      <button class="close-btn" onclick="toggleMenu()">×</button>
+      <a href="index.html" class="active">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="Instructors.html">Instructors</a>
+      <a href="Membership.html">Membership</a>
+      <a href="Facilities.html">Facilities</a>
+      <a href="Contact.html">Contact us</a>
+      <a href="About.html">About us</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Membership </h1>
+      <p>Group membership is for those who wish to affiliate their dojo or martial arts organization in their country or area through the International Kwanmukan.
+        Martial arts memberships can offer a variety of benefits, including:
+Priority booking: Members may be able to book classes in advance of others 
+Reduced costs: Members may receive discounts on classes, holiday camps, or other events 
+Access to resources: Members may have access to support, resources, or a landing page with their profile information 
+      </p>
+      <div class="two-columns">
+        <div>
+          <img src="img/img50.png" alt="alt="Poster for The Best Martial Arts for Women to Learn with women practicing martial arts in the background>
+          <p>She tried to run, but he blocked the exits. 
+
+            Nashali Alma, a fitness trainer, was cornered by Xavier Thomas-Jones while exercising at the gym in her apartment complex. Alma hid behind the workout equipment and tried to create distance from her attacker. 
+            
+            It didn’t work.
+            
+            Alma’s attacker eventually caught her, climbed on top of her, and pinned her to the ground. She was eventually able to fight her attacker off, and she ran to safety.</p>
+        </div>
+        <div>
+          <img src="img/img51.png" alt="Image 2">
+          <p>In these tough economic times, the business environment has become increasingly competitive. As a martial arts school proprietor, you’ve got to go beyond the traditional offerings to survive, let alone thrive.
+             Providing a diverse range of classes and services will bring in a wider audience, enriching the student learning experience and improving your bottom line.The right mix of classes and auxiliary services will set your studio apart.  </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="three-columns">
+      <div>
+        <img src="img/img52.png" alt="Image 3">
+        <p>The world of martial arts is vast and dates back thousands of years. There are multiple combat disciplines that have derived from practicing self defense, and competitive fighting soon followed and took many forms.
+
+          The term “combat sport” refers to a martial art form that has been adapted and regulated for use in a competitive atmosphere, one that emphasizes safety while also being able to effectively showcase an impressive arsenal of fighting skills. Combat sports are often called martial sports.</p>
+      </div>
+      <div>
+        <img src="img/img53.png" alt="Image 4">
+        <p>The number of martial arts gyms opening up across the United States has grown exponentially in the past decade. The popularity of martial arts has grown especially among adults. 
+
+          If you own a martial arts school or are thinking about opening one, there are several things to consider when it comes to marketing and making sure as many people as possible know why they should join your gym. In this article, we explore how to market your martial arts school to the adult sector.</p>
+      </div>
+      <div>
+        <img src="img/img54.png" alt="Image 5">
+        <p>This section explores the world of insurance designed especially for martial arts schools, trainers, and competitions. We examine the variety of coverage alternatives meant to give you the confidence to concentrate on what you do best—fostering growth, establishing discipline, and instilling greatness within the martial arts community—from securing your physical area to assuring the safety of participants.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <h2>Prices and Membership Options</h2>
+  
+      <div class="membership-option">
+          <div class="text-container">
+              <h2>Basic</h2>
+              <p>1 martial art – 2 sessions per week</p>
+              <p>£25.00</p>
+          </div>
+          <div class="button-container">
+              <button onclick="showForm('Basic')">Apply for Membership</button>
+          </div>
+      </div>
+  
+      <div class="membership-option">
+          <div class="text-container">
+              <h2>Intermediate</h2>
+              <p>1 martial art – 3 sessions per week</p>
+              <p>£35.00</p>
+          </div>
+          <div class="button-container">
+              <button onclick="showForm('Intermediate')">Apply for Membership</button>
+          </div>
+      </div>
+  
+      <div class="membership-option">
+          <div class="text-container">
+              <h2>Advanced</h2>
+              <p>Any 2 martial arts – 5 sessions per week</p>
+              <p>£45.00</p>
+          </div>
+          <div class="button-container">
+              <button onclick="showForm('Advanced')">Apply for Membership</button>
+          </div>
+      </div>
+  
+      <div class="membership-option">
+          <div class="text-container">
+              <h2>Elite</h2>
+              <p>Unlimited classes</p>
+              <p>£60.00</p>
+          </div>
+          <div class="button-container">
+              <button onclick="showForm('Elite')">Apply for Membership</button>
+          </div>
+      </div>
+  
+      <div class="membership-option">
+          <div class="text-container">
+              <h2>Private Tuition</h2>
+              <p>Per hour</p>
+              <p>£15.00</p>
+          </div>
+          <div class="button-container">
+              <button onclick="showForm('Private Tuition')">Apply for Membership</button>
+          </div>
+      </div>
+  
+      <div class="membership-option">
+          <div class="text-container">
+              <h2>Junior Membership</h2>
+              <p>All-kids martial arts sessions</p>
+              <p>£25.00</p>
+          </div>
+          <div class="button-container">
+              <button onclick="showForm('Junior Membership')">Apply for Membership</button>
+          </div>
+      </div><br><br><br>
+      <h2>Specialist Courses and Fitness Training</h2>
+      <div class="membership-option">
+        <div class="text-container">
+            <h2>Six-week beginners' self-defense course</h2>
+            <p>(2 x 1-hour session per week)</p>
+            <p> £180.00</p>
+        </div>
+        <div class="button-container">
+            <button onclick="showForm('Elite')">Apply for Membership</button>
+        </div>
+    </div>
+
+    <div class="membership-option">
+        <div class="text-container">
+            <h2>Use of fitness room</h2>
+            <p>£6 .00</p>
+        </div>
+        <div class="button-container">
+            <button onclick="showForm('Private Tuition')">Apply for Membership</button>
+        </div>
+    </div>
+
+    <div class="membership-option">
+        <div class="text-container">
+            <h2>Personal fitness training</h2>
+            <p>per hour</p>
+            <p>£35.00</p>
+        </div>
+        <div class="button-container">
+            <button onclick="showForm('Junior Membership')">Apply for Membership</button>
+        </div>
+    </div>
+  </div>
+  
+  <div id="membershipForm" class="membership-form" style="display: none;">
+    <h2>Membership Form</h2>
+    <p id="selectedMembership"></p>
+    <form id="membershipFormContent">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <button type="submit">Submit</button>
+      <button type="button" onclick="hideForm()">Cancel</button>
+    </form>
+  </div>
+
+  <!-- Thank You Message (Initially Hidden) -->
+  <div id="thankYouMessage" style="display: none;">
+    <h2>Thank You for Applying!</h2>
+    <p>Your application has been submitted successfully.</p>
+    <img src="img/thankyou.jpg" alt="Thank You Image">
+  </div>
+
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h1>More info?</h1>
+      <p>If you have any questions about the original Dubo®, check out the FAQs on our site or contact us. We’ll be
+        happy to hear from you!</p>
+      <a href="contact.html">
+        <button>Get in touch!</button>
+      </a>
+    </div>
+    <img src="img/img43.jpg" class="welcome-image" alt="Welcome Image">
+  </section>
+  
+  <!-- Footer with social media links -->
+  <footer class="footer">
+    <a href="FAQ.html">FAQ</a>
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+
+      <p>&copy; 2024 Budo Martial Arts.</p>
+    </div>
+  </footer>
+</body>
+
+<script>
+  const navLinks = document.querySelectorAll('.nav a');
+  const currentUrl = window.location.pathname;
+
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentUrl.split('/').pop()) {
+      link.classList.add('active');
+    }
+  });
+
+  function toggleMenu() {
+    document.querySelector(".nav").classList.toggle("active");
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+      function showForm(membershipType) {
+        console.log("Showing form for:", membershipType);
+        document.getElementById("membershipForm").style.display = "block";
+        document.getElementById("thankYouMessage").style.display = "none"; 
+        document.getElementById("selectedMembership").textContent = `You selected: ${membershipType} Membership`;
+      }
+
+      function hideForm() {
+        console.log("Hiding form");
+        document.getElementById("membershipForm").style.display = "none";
+      }
+
+      document.getElementById("membershipFormContent").addEventListener("submit", function(event) {
+        event.preventDefault();
+        console.log("Form submitted");
+
+
+        window.location.href = "thank you.html";  
+      });
+
+
+      window.showForm = showForm;
+      window.hideForm = hideForm;
+    });
+</script>
+
+
+</html>
